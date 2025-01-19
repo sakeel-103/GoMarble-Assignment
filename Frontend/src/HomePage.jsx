@@ -16,7 +16,7 @@ const HomePage = () => {
         }
 
         try {
-            const response = await axios.get(`http://localhost:5000/api/reviews?page=${encodeURIComponent(url)}`);
+            const response = await axios.get(`https://gomarble-assignment-wz5f.onrender.com/api/reviews?page=${encodeURIComponent(url)}`);
             if (response.data.reviews && Array.isArray(response.data.reviews)) {
                 navigate("/reviews", { state: { reviews: response.data.reviews } });
                 setError(""); // Clear any previous errors
