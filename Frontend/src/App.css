@@ -1,0 +1,210 @@
+/* Correcting the h1 style */
+h1 {
+  font-weight: bold;
+  font-size: 40px; /* Adjust the font size as needed */
+  text-align: center; /* Centers the header */
+  margin-top: 20px; /* Adds space at the top */
+  margin-bottom: 20px; /* Adds space at the bottom */
+  color: #333; /* Optional: Adjust header color */
+}
+
+/* The rest of the CSS remains the same */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Makes the container vertically centered */
+  margin: 0; /* Removes default margin */
+  background-color: #f9f9f9; /* Optional: Add a background color */
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;  /* Take full width to allow for right-alignment of links */
+  justify-content: space-between; /* Space out the logo and navbar links */
+}
+
+.navbar-logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 60px;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto; /* This ensures the links are pushed to the right */
+}
+
+.navbar-item {
+  margin-right: 100px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #007bff;
+}
+
+/* Container and form styles */
+.container {
+  width: 100%;
+  max-width: 600px; /* Set a fixed width for better control */
+  padding: 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+  background-color: #fff; /* Optional: Add background for contrast */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 28px; /* Increase font size for better visibility */
+  color: #333;
+}
+
+.form {
+  display: flex;
+  flex-direction: row; /* Display elements in a horizontal row */
+  justify-content: center; /* Center elements horizontally */
+  align-items: center; /* Center elements vertically */
+  width: 100%;
+}
+
+.form input {
+  padding: 12px; /* Increase padding for better spacing */
+  margin-right: 15px; /* Add some margin to the right of the input */
+  font-size: 16px; /* Increase font size */
+  width: 100%; /* Make input field take up the full width of the container */
+  max-width: 500px; /* Limit max width */
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form button {
+  padding: 12px 25px; /* Increase padding */
+  font-size: 14px; /* Increase font size */
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  width: 100%; /* Make button take up the full width of the container */
+  max-width: 150px; /* Limit max width to match the input field */
+  margin-left: 15px; /* Add space between input and button */
+}
+
+.form button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Popup Styling */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.popup-content button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.popup-content button:hover {
+  background-color: #0056b3;
+}
+
+.reviews-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.review-count {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.reviews-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.reviews-table th, .reviews-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.reviews-table th {
+  background-color: #f4f4f4;
+}
+
+.no-reviews-message {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
